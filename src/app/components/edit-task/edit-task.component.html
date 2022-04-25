@@ -1,0 +1,30 @@
+<div id="editTaskContainer" class="container-fluid">
+     <div *ngIf="currentTask" id="editTaskBackground" class="container">
+          <div id="heading">
+               EDIT TASK
+          </div>
+
+          <div id="editTaskBody">
+               <form [formGroup]="taskForm" id="editTaskForm" (ngSubmit)="onSubmit()">
+                    <div id="textBox">
+                         <p id="editInputTitle">Title:</p>
+                         <input formControlName="title" name='editTaskInput' id="editInput" type="text" value="{{ currentTask.title }}">
+                    </div>
+
+
+                    <div id="dateBox">
+                         <div>
+                              <ngb-datepicker #dp formControlName="date" (navigate)="date = $event.next"></ngb-datepicker>
+                         </div>
+                    </div>
+
+                    <div id="editButtonBox">
+                         <a href="/task" id="cancelButton">CANCEL</a>
+                         <input id="submitButton" type="submit" value="EDIT TASK">
+                    </div>
+
+               </form>
+          </div>
+
+</div>
+

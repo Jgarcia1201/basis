@@ -1,0 +1,116 @@
+#goalContainer {
+     height: 100vh;
+     width: 100vw;
+     background-color: rgba(253, 253, 253, 0.178);
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     top: 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     background-image: url('../../../assets/images/goal/fuji.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-blend-mode: overlay;
+}
+
+#goalBackground {
+     width: 95%;
+     height: 85%;
+     background-color: rgba(5, 5, 5, 0.836);
+     border-radius: 10px;
+     padding: 0px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+#goalHeading {
+     width: 100%;
+     height: 10%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 28px;
+}
+
+
+#goalBody {
+     width: 100%;
+     height: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#goalGrid {
+     width: 90%;
+     height: 85%;
+     display: grid;
+     grid-template-columns: 33.333% 33.333% 33.4%;
+     grid-auto-rows: 50%;
+     overflow-y: scroll;
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+     opacity: 0;
+     transition: 0.5s;
+}
+
+.gridItem {
+     width: 100%;
+     transition: 0.5s;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.gridGoalCard {
+     height: 80%;
+     width: 90%;
+     border: 1px solid rgb(0, 0, 0);
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.158);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color:white;
+     text-decoration: none;
+     transition: 0.5s;
+     font-size: 20px;
+}
+
+.gridGoalCard:hover {
+     background-color: rgba(70, 74, 126, 0.274);
+}
+
+#goalFoot {
+     height: 10%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: right;
+     padding-right: 20px;
+}
+
+#addGoalButton {
+     border: 1px solid white;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     color: white;
+     transition: 0.3s;
+     background-color: rgba(255, 255, 255, 0);
+     font-size: 24px;
+     border-radius: 5px;
+}
+
+#addGoalButton:hover {
+     background-color: rgba(255, 255, 255, 0.342);;
+}

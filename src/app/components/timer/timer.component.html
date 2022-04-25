@@ -1,0 +1,14 @@
+<div id="timerContainer">
+     <div id="timer">{{hours}}h {{minutes}}m {{seconds}}s</div>
+     <div id="timerBackground">
+          <div id="timerGrid">
+
+          </div>
+     </div>
+
+     <div id="timerControl">
+          <button id="endButton" (click)="stopAnimation()">END</button>
+          <button (click)="startAnimation()" id="startButton">START</button>
+          <button id="cancelButton" (click)="cancelButtonClick()">GO BACK</button>
+     </div>
+</div>

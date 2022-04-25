@@ -1,0 +1,26 @@
+<div id="addTaskContainer" class="container-fluid">
+     <div id="addTaskBackground" class="container">
+          <div id="heading">
+               ADD A NEW TASK
+          </div>
+
+          <div id="addTaskBody">
+               <form [formGroup]="taskForm" id="addTaskForm" (ngSubmit)="onSubmit()">
+                    <div id="textBox">
+                         <p id="addInputTitle">Title:</p>
+                         <input formControlName="title" name='addTaskInput' id="addInput" type="text">
+                    </div>
+
+
+                    <div id="dateBox">
+                         <div>
+                              <ngb-datepicker #dp formControlName="date" (navigate)="date = $event.next"></ngb-datepicker>
+                         </div>
+                    </div>
+
+                    <input id="submitButton" type="submit" value="ADD TASK">
+
+               </form>
+          </div>
+          
+</div>

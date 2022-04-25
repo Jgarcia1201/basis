@@ -1,0 +1,139 @@
+#studyContainer {
+     height: 100vh;
+     width: 100vw;
+     background-color: rgba(0, 0, 0, 0.233);
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     top: 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     background-image: url('../../../assets/images/study/luigi-pozzoli-Db8xEYwtdWw-unsplash.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-blend-mode: overlay;
+}
+
+#studyBackground {
+     width: 80%;
+     height: 75%;
+     background-color: rgba(5, 5, 5, 0.836);
+     border-radius: 10px;
+     padding: 0px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+#studyHeading {
+     width: 100%;
+     height: 10%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 28px;
+}
+
+#studyBody {
+     width: 100%;
+     height: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#studyGrid {
+     width: 90%;
+     height: 85%;
+     display: grid;
+     grid-template-columns: 33.333% 33.333% 33.4%;
+     grid-auto-rows: 50%;
+     overflow-y: scroll;
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+     transition: 0.5s;
+     opacity: 0;
+}
+
+.gridItem {
+     width: 100%;
+     transition: 0.5s;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     color: white;
+}
+
+.gridItem:hover {
+     background-color: rgba(105, 105, 105, 0.507);
+}
+
+.progressBar {
+     width: 60%;
+     height: 20px;
+     background-color: rgba(255, 255, 255, 0.432);
+     overflow: hidden;
+}
+
+.progress {
+     height: 20px;
+     background-color: rgba(0, 128, 0, 0.815);
+}
+
+.controlPanel {
+     width: 90%;
+     height: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.studyButton {
+     text-decoration: none;
+     color: white;
+     border: 1px solid white;
+     width: 80%;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+}
+
+.studyButton:hover {
+     background-color: rgba(67, 50, 141, 0.582);
+     cursor: pointer;
+}
+
+#studyFoot {
+     height: 10%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: right;
+     padding-right: 20px;
+}
+
+#addSubjectButton {
+     border: 1px solid white;
+     width: 40px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     color: white;
+     transition: 0.3s;
+     background-color: rgba(255, 255, 255, 0);
+     font-size: 24px;
+     border-radius: 5px;
+}
+
+#addSubjectButton:hover {
+     background-color: rgba(255, 255, 255, 0.342);;
+}

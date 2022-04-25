@@ -1,0 +1,21 @@
+<div id="addGoalContainer">
+     <div id="addGoalBackground">
+
+          <form id="goalForm" [formGroup]="goalForm" (ngSubmit)="onSubmit()">
+               <div id="addGoalHeading">
+                    Add Goal
+               </div>
+     
+               <div id="addGoalBody">
+                    <p id="addGoalInputText">What do you want to accomplish?</p>
+                    <input formControlName="title" name="input-name" type="text" id="titleInput">
+               </div>
+     
+               <div id="addGoalFoot">
+                    <input type="submit" id="saveButton" value="SAVE"/>
+                    <a routerLink='/goals'id="cancelButton">GO BACK</a>
+               </div>
+          </form>
+     
+     </div>
+</div>

@@ -1,0 +1,36 @@
+<div id="taskContainer" class="container-fluid" *ngIf="auth.user$ | async as user">
+     <video id="taskVideo" src="../../../assets/images/dashboard/Waves crashing.mp4" autoplay loop></video>
+     <div id="taskBackground" class="container">
+          <div id="heading">
+               TASKS
+          </div>
+
+          <div id="taskBody">
+               <div id="taskGrid">
+                    <div class="taskDiv" *ngFor="let temp of tasks">
+
+                         <div class="taskDescription">
+                              <p>{{temp.title}}</p>
+                              <p>DUE: {{temp.dueDate!.toLocaleString().slice(0, 10)}}</p>
+                         </div>
+                         
+                         <div class="taskButtonBox">
+                              <a class="finishButton" routerLink="/task/{{temp.id}}">
+                                   <button id="editButton">EDIT</button>
+                              </a>
+                              <button (click)="finishTask(temp)" class="finishButton">FINISH</button>
+                         </div>
+
+                    </div>
+               </div>
+          </div>
+
+          <div id="taskFoot">
+               <div id="addButtonBox">
+                    <a href='/addtask'>
+                         <button id="addButton">ADD TASK</button>
+                    </a>
+               </div>
+          </div>
+     </div>
+</div>

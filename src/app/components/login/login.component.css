@@ -1,0 +1,19 @@
+#loginButton {
+     display: flex;
+     border: 0.5px solid white;
+     border-radius: 5px;
+     width: 300px;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     height:40px;
+     background-color: none;
+     color: white;
+     font-size: 18px;
+     transition: 0.5s;
+     font-family: monospace;
+}
+
+#loginButton:hover {
+     background-color: rgba(69, 96, 185, 0.603);
+}

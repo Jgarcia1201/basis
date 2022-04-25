@@ -1,0 +1,34 @@
+<div id="editSubjectContainer">
+     <div id="editSubjectBackground">
+
+          <form id="subjectForm" [formGroup]="subjectForm" (ngSubmit)="onSubmit()">
+               <div id="editSubjectHeading">
+                    Edit Subject
+               </div>
+     
+               <div id="editSubjectBody">
+                    <div id="titleBox">
+                         <p id="editSubjectInputText">Title</p>
+                         <input formControlName="title" value="{{currentSubject.title}}" name="input-name" type="text" id="titleInput">
+                    </div>
+
+                    <div id="secondBox">
+                         <div id="minutesTitle">Daily Goal (Hours) Max: 6</div>
+                         <div id="minutesBox">
+                              <div id="minus" (click)="minHour()">-</div>
+                              <input value="{{hours}}" name="input-name" type="text" id="minutes" readonly>
+                              <div id="plus" (click)="addHour()">+</div>
+                         </div>
+                         
+                    </div>
+               </div>
+     
+               <div id="editSubjectFoot">
+                    <input type="submit" id="saveButton" value="SAVE"/>
+                    <a routerLink='/study'id="cancelButton">GO BACK</a>
+                    <div (click)="deleteSubject()" id="cancelButton">DELETE SUBJECT</div>
+               </div>
+          </form>
+     
+     </div>
+</div>

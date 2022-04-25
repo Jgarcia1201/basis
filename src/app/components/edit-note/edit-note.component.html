@@ -1,0 +1,22 @@
+<div id="editNoteContainer">
+     <div id="editNoteBackground">
+
+          <form [formGroup]="noteForm" id="noteForm" (ngSubmit)="onSubmit()">
+               <div id="editNoteHeading">
+                    <input formControlName="title" name="input-name" type="text" id="titleInput" value="{{currentNote.title}}">
+               </div>
+
+               <div id="editNoteBody">
+                    <div id="noteBody">
+                         <textarea formControlName="content" id="noteText" name="textarea-name"></textarea>
+                    </div>
+               </div>
+
+               <div id="editNoteFoot">
+                    <input type="submit" id="saveButton" value="SAVE"/>
+                    <a routerLink='/goals'id="cancelButton">GO BACK</a>
+                    <button id="deleteButton" (click)="deleteNote()">DELETE NOTE</button>
+               </div>
+          </form>
+     </div>
+</div>

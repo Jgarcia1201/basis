@@ -1,0 +1,49 @@
+<div id="dashboardContainer" class="container-fluid" *ngIf="auth.user$ | async as user">
+     <!-- DASHBOARD HEAD START -->
+     <div id="dashboardHead">
+          <h1>Hello, {{user.name}}</h1>
+     </div>
+     <!-- DASHBOARD HEAD END -->
+
+     <!-- DASHBOARD CONTENT START -->
+     <div id="dashboardContent">
+          <div id="dashboardBackground">
+               <div id="dashboardBackgroundLeft">
+                    <div id="remoteControl">
+                         <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank" rel="noopener noreferrer" class="playMusic">Play Music</a>
+                         <a href="https://jgarcia1201.github.io/calculator/" target="_blank" rel="noopener noreferrer" class="playMusic">Calculator</a>
+                         <a href="/addtask" class="playMusic">Add Task</a>
+                    </div>
+               </div>
+               <div id="dashboardBackgroundRight">
+                    <div id="weatherBox">
+                         <div id="weatherIconBox">
+                              <h2 id="currentTemp" class="display-3">Current Temperature:</h2>
+                              <div id="currentTempInfo">
+                                   {{this.weatherData.current.temp_f}}
+                                   <span id="degrees">&#8457;</span>
+                              </div>
+                         </div>
+                         <div id="weatherInfoBox">
+                              <div id="weatherInfoWords">
+                                   <p class="weatherText">Forecasted Percipitation: {{this.weatherData.current.precip_in}}</p>
+                                   <p class="weatherText">Humidity: {{this.weatherData.current.humidity}}%</p>
+                                   <p class="weatherText">Wind: {{this.weatherData.current.wind_mph}}mph {{this.weatherData.current.wind_dir}}</p>
+
+                              </div>
+                              <div id="weatherInfoIconBox">
+                                   <img id="weatherIcon" src="{{this.weatherData.current.condition.icon}}">
+                                   <h5 class="display-6" id="weatherIconText">{{this.weatherData.current.condition.text}}</h5>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- DASHBOARD CONTENT END -->
+
+     <!-- DASHBOARD FOOTER START -->
+     
+     <!-- DASHBOARD FOOTER END -->
+
+</div>

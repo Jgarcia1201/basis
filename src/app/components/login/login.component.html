@@ -1,0 +1,9 @@
+<div class="loginButtonBox" *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+     <a routerLink="/login" id="loginButton" (click)="auth.logout({ returnTo: document.location.origin })">
+          Log Out
+     </a>
+</div>
+
+<ng-template #loggedOut>
+     <a routerLink="/login/" id="loginButton" (click)="auth.loginWithRedirect({ appState: { target: '/dashboard' }})">Log In</a>
+</ng-template>

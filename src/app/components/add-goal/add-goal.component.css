@@ -1,0 +1,104 @@
+#addGoalContainer {
+     height: 100vh;
+     width: 100vw;
+     background-color: rgba(253, 253, 253, 0.178);
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     top: 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     background-image: url('../../../assets/images/goal/fuji.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-blend-mode: overlay;
+}
+
+#addGoalBackground {
+     width: 45%;
+     height: 55%;
+     background-color: rgba(5, 5, 5, 0.836);
+     border-radius: 10px;
+     padding: 0px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+#goalForm {
+     height: 100%;
+     width: 100%;
+}
+
+#addGoalHeading {
+     width: 100%;
+     height: 20%;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: 28px;
+}
+
+#addGoalBody {
+     width: 100%;
+     height: 65%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 20px;
+}
+
+#addGoalInputText {
+     color: white;
+}
+
+#titleInput {
+     width: 50%;
+     height: 60px;
+     background-color: rgba(255, 255, 255, 0);
+     border: 1px solid white;
+     border-radius: 25px;
+     color: white;
+     text-align: center;
+}
+
+
+#addGoalFoot {
+     width: 100%;
+     height: 15%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+}
+
+#saveButton {
+     border: 1px solid white;
+     width: 250px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     color: white;
+     transition: 0.3s;
+     background-color: rgba(255, 255, 255, 0);
+}
+
+#cancelButton {
+     border: 1px solid white;
+     width: 250px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     color: white;
+     transition: 0.3s;
+}

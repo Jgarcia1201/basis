@@ -1,0 +1,179 @@
+#dashboardContainer {
+     height: 100vh;
+     width: 100vw;
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     top: 0;
+     background-image: url("../../../assets/images/dashboard/prodBackground.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-color: rgba(182, 182, 182, 0.233);
+     background-blend-mode: overlay;
+     overflow: hidden;
+     
+}
+
+#dashboardHead {
+     color: black;
+     text-shadow: 7px 6px 15px rgba(0, 0, 0, 0.603);
+     padding-left: 50px;
+     padding-top: 80px;
+}
+
+#dashboardContent {
+     height: 75%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#dashboardBackground {
+     width: 70%;
+     height: 80%; 
+     background-color: rgba(0, 0, 0, 0.719);
+     display: flex;
+     border-radius: 10px;
+}
+
+#dashboardBackgroundLeft {
+     height: 100%;
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#remoteControl {
+     height: 80%;
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.playMusic {
+     width: 100%;
+     height: 33%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid white;
+     transition: 0.5s;
+     text-decoration: none;
+     font-size: 20px;
+     color: white;
+}
+
+.playMusic:hover {
+     background-color: rgba(255, 255, 255, 0.384);
+     color: rgba(0, 0, 0, 0.836);
+}
+
+#dashboardBackgroundRight {
+     height: 100%;
+     width: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#weatherBox {
+     height: 80%;
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+}
+
+#weatherIconBox {
+     height: 70%;
+     width: 100%;
+     border: 1px solid white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 72px;
+     color: white;
+     flex-direction: column;
+}
+
+#currentTemp {
+     font-size: 26px;
+     position: relative;
+     width: 100%;
+     padding-left: 20px;
+}
+
+#currentTempInfo {
+     height:70%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#degrees {
+     font-size: 44px;
+     margin-bottom: 20px;
+     height: 100px;
+}
+
+#weatherInfoBox {
+     height: 30%;
+     width: 100%;
+     color: white;
+     font-size: 22px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 10px;
+}
+
+#weatherInfoWords {
+     height: 100%;
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 10px;
+}
+
+.weatherText {
+     font-size: 16px;
+     width: 90%;
+}
+
+#weatherInfoIconBox {
+     height: 100%;
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+}
+
+#weatherIcon {
+     opacity: 0.9;
+}
+
+#weatherIconText {
+     font-size: 19px;
+     color: rgba(255, 255, 255, 0.979);
+}
+
+#dashboardFooter {
+     color: white;
+     padding-left: 50px;
+     padding-top: 10px;
+}
+
+#navBar {
+     background-color: white;
+}
+

@@ -1,0 +1,34 @@
+<div id="noteListContainer">
+     <div id="noteListBackground">
+          <div id="noteListHeading">
+               {{goal.title}}
+          </div>
+
+          <div id="noteListBody">
+               <div id="noteListGrid">
+                    <a routerLink="notes/{{temp.id}}"class="noteGridItem" *ngFor="let temp of notes">
+                         <div class="noteItemTitleBox">
+                              {{temp.title}}
+                         </div>
+                         <div class="noteItemButtonBox">
+                              {{temp.content!.slice(0, 50)}}...
+                         </div>
+                    </a>
+                    
+                    
+               </div>
+          </div>
+
+          <div id="noteListFoot">
+               <a id="addNoteButton" routerLink="/goals/{{goal.id}}/addnote">
+                    ADD ENTRY
+               </a>
+               <a id="editGoalButton" routerLink="/goals/edit/{{goal.id}}">
+                    EDIT GOAL
+               </a>
+               <a id="addNoteButton" routerLink="/goals">
+                    GO BACK
+               </a>
+          </div>
+     </div>
+</div>

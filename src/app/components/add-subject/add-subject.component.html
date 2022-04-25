@@ -1,0 +1,33 @@
+<div id="addSubjectContainer">
+     <div id="addSubjectBackground">
+
+          <form id="subjectForm" [formGroup]="subjectForm" (ngSubmit)="onSubmit()">
+               <div id="addSubjectHeading">
+                    Add Subject
+               </div>
+     
+               <div id="addSubjectBody">
+                    <div id="titleBox">
+                         <p id="addSubjectInputText">Title</p>
+                         <input formControlName="title" name="input-name" type="text" id="titleInput">
+                    </div>
+
+                    <div id="secondBox">
+                         <div id="minutesTitle">Daily Goal (Hours) Max: 6</div>
+                         <div id="minutesBox">
+                              <div id="minus" (click)="minHour()">-</div>
+                              <input value="{{hours}}" name="input-name" type="text" id="minutes" readonly>
+                              <div id="plus" (click)="addHour()">+</div>
+                         </div>
+                         
+                    </div>
+               </div>
+     
+               <div id="addSubjectFoot">
+                    <input type="submit" id="saveButton" value="SAVE"/>
+                    <a routerLink='/study'id="cancelButton">GO BACK</a>
+               </div>
+          </form>
+     
+     </div>
+</div>

@@ -1,0 +1,28 @@
+<div id="studyContainer">
+     <div id="studyBackground">
+          <div id="studyHeading">
+               SUBJECTS
+          </div>
+
+          <div id="studyBody">
+               <div id="studyGrid">
+                    <div class="gridItem" *ngFor="let temp of subjects">
+                         <h3>{{temp.title}}</h3>
+                         <div class="progressBar">
+                              <div class="progress" style="width: {{getCalc(temp)}}%"></div>
+                         </div>
+                         <div class="controlPanel">
+                              <a routerLink="timer/{{temp.id}}" class="studyButton">STUDY</a>
+                              <a routerLink="edit/{{temp.id}}" class="studyButton">EDIT</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <div id="studyFoot">
+               <a routerLink="/study/add" id="addSubjectButton">+</a>
+          </div>
+          
+     </div>
+
+</div>

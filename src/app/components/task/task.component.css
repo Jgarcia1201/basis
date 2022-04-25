@@ -1,0 +1,124 @@
+#taskContainer {
+     height: 100vh;
+     width: 100vw;
+     background-color: rgba(134, 7, 7, 0.151);
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     top: 0px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+}
+
+#taskBackground {
+     width: 95%;
+     height: 85%;
+     background-color: rgba(5, 5, 5, 0.836);
+     border-radius: 10px;
+     padding: 0px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+#taskVideo {
+     position: absolute;
+     z-index:-1;
+     height: 100vh;
+}
+
+#heading {
+     border-radius: 10px;
+     height: 10%;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: rgba(255, 255, 255, 0.788);
+     font-size: 36px;
+     margin-bottom: 10px;
+}
+
+#taskBody {
+     height: 75%;
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+     border: 1px solid rgb(128, 128, 128);
+     width: 75%;
+     margin-bottom: 30px;
+}
+
+#taskGrid {
+     height: 90%;
+     width: 60%;
+     display: flex;
+     flex-direction: column;
+     overflow-y: auto;
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+     opacity: 0;
+     transition: 0.3s;
+}
+
+.taskDiv {
+     border: 1px solid white;
+     color: white;
+     height: 25%;
+     transition: 0.5s;
+     padding: 15px;
+     display: flex;
+}
+
+.taskDiv:hover {
+     background-color: rgba(255, 255, 255, 0.253);
+}
+
+.taskDescription {
+     width: 50%;
+}
+
+.taskButtonBox {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+}
+
+.finishButton {
+     width: 70%;
+     color: white;
+     background-color: rgba(255, 255, 255, 0.027);
+     border: 1px solid white;
+     transition: 0.4s;
+}
+
+#editButton {
+     width: 100%;
+     color: white;
+     background-color: rgba(255, 255, 255, 0.027);
+     transition: 0.4s;
+     border: none;
+}
+
+.finishButton:hover {
+     background-color: rgba(89, 89, 248, 0.507);
+}
+
+#addButton {
+     width: 300px;
+     background: rgba(255, 255, 255, 0);
+     border: 1px solid white;
+     height: 40px;
+     color: white;
+     transition: 0.4s;
+     height: 50px;
+}
+
+#addButton:hover {
+     background-color: rgba(89, 89, 248, 0.507);
+}

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
+import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app-1';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+
+  constructor(public auth: AuthService,
+    @Inject(DOCUMENT) public document: Document) {
+
+  }
+  
 }

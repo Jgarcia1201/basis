@@ -1,0 +1,23 @@
+<div id="goalContainer">
+     <div id="goalBackground">
+
+          <div id="goalHeading">
+               GOALS
+          </div>
+
+          <div id="goalBody">
+               <div id="goalGrid">
+                    <div class="gridItem" *ngFor="let temp of goals">
+                         <a class="gridGoalCard" routerLink="/goals/{{temp.id}}">
+                              {{temp.title}}
+                         </a>
+                    </div>
+               </div>
+          </div>
+
+          <div id="goalFoot">
+               <a routerLink="/goals/add/newgoal" id="addGoalButton">+</a>
+          </div>
+
+     </div>
+</div>
